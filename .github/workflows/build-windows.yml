@@ -18,6 +18,5 @@ jobs:
 
       - name: "Build"
         run: |
-          dotnet restore
-          dotnet build --configuration Release
-          dotnet test
+          dotnet build --configuration Release source/GlobalProvider/GlobalProvider.sln
+          dotnet test source/GlobalProvider/GlobalProvider.sln
